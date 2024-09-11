@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Registration and Login Forms -->
+    <div id="auth-forms">
+        <!-- Registration Form -->
+        <form id="registration-form" autocomplete="off">
+            <h2>Register</h2>
+            <div id="input-first-name">
+                <input class="input" required type="text" id="first-name" name="first-name" autocomplete="off">
+            <label class="label" for="first-name">First Name</label>
+            </div>
+            <div id="input-last-name">
+                <input class="input" required type="text" id="last-name" name="last-name" autocomplete="off">
+            <label class="label" for="last-name">Last Name</label>
+            </div>
+            <button event="submit" type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- Main Content -->
+    <header class="header">
+        <h1 id="header-h1-el"></h1>
+        <h2 id="header-h2-el"></h2>
+    </header>
+    
+    <main id="main-content">
+
+        <div class="venue-section">
+            <h2>Venue</h2>
+            <div class="venue-details">
+                <div class="address">
+                    <p>Hummingbird Hotel & Banquet,<br>
+                    Sanket Road, Mota Bazaar,<br>
+                    Vallabh Vidya Nagar, Anand,<br>
+                    388120, Gujarat, India.</p>
+                </div>
+                <div class="qr-code">
+                    <a id="loc-qr" href="https://maps.app.goo.gl/9BcVucXN1NHjyuua6" target="_blank">
+                        <img src="https://cdn.me-qr.com/qr/125521373.png?v=1726041756" alt="Venue QR Code" width="200" height="200">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="countdown">
+            <div id="count-days"></div>
+            <div id="count-hours"></div>
+            <div id="count-min"></div>
+            <div id="count-sec"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
