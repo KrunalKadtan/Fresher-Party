@@ -1,6 +1,6 @@
 let partyTitle = document.getElementById("header-h1-el")
 
-let partyName = "Felicidad"
+let partyName = "Felicidad '24"
 
 partyTitle.textContent = partyName
 
