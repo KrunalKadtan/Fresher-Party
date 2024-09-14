@@ -32,11 +32,11 @@ body {
     /* min-height: 100vh; */
     margin: 0 auto;
     /* background-image: url('img/logged_in_background.jpg'); */
-    background-size: cover;
+    /* background-size: cover; */
     /* background-position: top; */
     background-repeat: no-repeat;
     
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -56,14 +56,11 @@ body.auth-required {
 }
 
 body.logged-in {
-    background-image: url('img/logged_in_background.jpg'); /* Background for after login */
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: brightness(70%) blur(5px);
-    min-height: fit-content;
-    min-width: fit-content;
-    max-height: max-content;
-    max-width: max-content;
+    background-image: url('img/06a50d89723ed75a06172c6969e754e5.jpg'); /* Background for after login */
+    
+    background-position: 0% 25%;
+    background-attachment: fixed;
+    background-size:cover;
 }
 
 /* Show the auth-forms when needed */
@@ -263,7 +260,7 @@ body.logged-in #main-content {
     transform: translate(-50%);
     top: 600px;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     padding: 20px;
     border-radius: 15px;
     margin: 20px;
@@ -275,10 +272,11 @@ body.logged-in #main-content {
 /* Headline styling */
 .venue-section h2 {
     font-size: 36px;
-    color: #333;
+    color: #dbdbdb;
     margin-top: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 1px 1px 8px #000000;
 }
 
 /* Styling for address and QR code layout */
@@ -292,10 +290,11 @@ body.logged-in #main-content {
 /* Address styling */
 .address {
     flex: 1;
-    width: 50%;
+    width: 60%;
     font-size: 25px;
     text-align: left;
-    color: #292828;
+    color: #b6b3b3;
+    text-shadow: 1px 1px 8px #000000;
 }
 
 .qr-code {
@@ -317,12 +316,12 @@ body.logged-in #main-content {
     font-size: 40px;
     color: white;
     text-align: center;
+    justify-content: center;
     margin: 10px; /* Space between countdown and footer */
     position: absolute; /* Place it above the footer */
     top: 1000px; /* Adjust this value to move countdown up/down */
-    /* left: 50%; */
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateX(-50%); /* Center the countdown */
@@ -338,6 +337,12 @@ body.logged-in #main-content {
 
 /* Mobile Layout (default, small screens) */
 @media only screen and (max-width: 768px) {
+
+    body.logged-in {
+        background-position: unset;
+        width: 474px;
+        height: 842px;
+    }
 
     #auth-forms {
         top: 200px;
